@@ -1,0 +1,14 @@
+EHLO domain.eu
+AUTH LOGIN
+BASE64_USERNAME
+BASE64_PASSWD
+MAIL FROM: notification@domain.eu
+RCPT TO: notification@domain.eu
+DATA
+From: Notification  <TUTAJ _ADRES_ JAKI MASZ ZWERYFIKOWANY>
+To: all-players-mails
+Subject: FreeCiv - turn ##TURN_NUMBER## finished
+
+This message is a reminder that turn ##TURN_NUMBER## have been finished. Visit FreeCiv to make your move.
+.
+QUIT
